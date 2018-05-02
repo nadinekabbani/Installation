@@ -1,0 +1,330 @@
+/* ========================================
+ * CSS written here will override Tachyons
+ * ======================================== */
+
+
+ .wrapper {
+   display: flex;
+   flex-flow: row wrap;
+   margin-left:15%;
+   margin-right: 15%;
+
+ }
+
+
+
+ .wrapper > * {
+   flex: 1 100%;
+ }
+
+.color1 {
+  color: rgba(0, 20, 137, 100%);
+}
+.headersize {
+  font-size: 4.5em;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-left: 0px;
+  text-align: center;
+}
+
+.headercontainer {
+  background-image: url(22.png);
+  background-repeat: repeat-x;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: animate 8s linear infinite;
+  -webkit-backface-visibility: hidden;
+}
+
+.headercontainer2 {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content:right;
+align-items: flex-end;
+
+}
+
+@-webkit-keyframes animate {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.text2 {
+  font-size: 0.8em;
+  padding-top: 3px;
+  text-align: center;
+  color: rgba(0, 20, 137, 100%);
+}
+
+.text22 {
+  font-size: 0.8em;
+  padding-top: 3px;
+  text-align: center;
+  color: white;
+}
+
+.text4 {
+  font-size: 0.7em;
+  padding-top: 3px;
+  text-align: right;
+  color: rgba(0, 20, 137, 100%);
+  margin-right: 210px;
+}
+
+.text44 {
+  font-size: 0.7em;
+  padding-top: 3px;
+  text-align: left;
+  color: white;
+  margin-left: 210px;
+}
+
+.text441 {
+  font-size: 0.8em;
+  padding-top: 3px;
+  text-align: center;
+  color: white;
+}
+
+
+
+.para10 {
+  font-size: 0.7 em;
+  text-align: center;
+  color: white;
+}
+
+
+
+.containerboxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+}
+
+
+
+.item1 {
+  height: 332px;
+  width: 211px;
+  background-color: white;
+  margin: 2px;
+}
+.item2 {
+  height: 167px;
+  width: 167px;
+  background-color: white;
+  margin: 2px;
+}
+.item3 {
+  height: 393px;
+  width: 211px;
+  background-color: white;
+  margin: 2px;
+}
+.item4 {
+  height: 263px;
+  width: 211px;
+  background-color: white;
+  margin: 2px;
+}
+.item5 {
+  height: 332px;
+  width: 211px;
+  background-color: white;
+  margin: 2px;
+}
+
+.textOverImage1 {
+  position: relative;
+  float: left;
+  margin: 4px;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 0.5s;
+  overflow: hidden;
+  border-radius: 2px;
+}
+
+.textOverImage1:hover {
+  background-size: 110%;
+}
+
+.textOverImage1:before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(100%); /*use transform:translateY(100%); to remove footer*/
+  background-color: rgba(0, 20, 137, 100%);
+  color: #fff;
+  padding: 0.4px;
+  content: attr(data-title);
+  transition: 0.5s 1s;
+  color: rgba(0, 20, 137, 100%);
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.textOverImage1:after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: white;
+  font-size: 0.8em;
+  padding: 15px;
+  background-color: rgba(0, 20, 137, 80%);
+  border-radius: 8px;
+  content: attr(data-text);
+  transition: 0.5s;
+  padding-top: 4em;
+  margin-top: 1px;
+  transform: translateY(100%);
+  opacity: 0;
+}
+
+.textOverImage1:hover:after {
+  transform: translateY(0);
+  transition: 0.5s 0.1s;
+  opacity: 1;
+}
+.textOverImage1:hover:before {
+  transform: translateY(0);
+  padding: 8px;
+  background-color: rgba(0, 0, 0, 0);
+  transition: 0.5s;
+}
+
+.textOverImage2 {
+  position: relative;
+  float: left;
+  margin: 2px;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 0.5s;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.textOverImage2:hover {
+  background-size: 110%;
+}
+
+.textOverImage2:before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(100%
+); /*use transform:translateY(100%); to remove footer*/
+  background-color: rgba(0, 20, 137, 60%);
+  color: #fff;
+  padding: 0 4px;
+  content: attr(data-title);
+  transition: 0.5s 1s;
+  color: rgba(0, 20, 137, 100%);
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.textOverImage2:after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: white;
+  font-size: 0.65em;
+  background-color: rgba(0, 20, 137, 80%);
+  border-radius: 8px;
+  padding: 12px;
+  content: attr(data-text);
+  transition: 0.5s;
+  padding-top: 4em;
+  margin-top: 1px;
+  transform: translateY(100%);
+  opacity: 0;
+}
+
+.textOverImage2:hover:after {
+  transform: translateY(0);
+  transition: 0.5s 0.1s;
+  opacity: 1;
+}
+.textOverImage2:hover:before {
+  transform: translateY(0);
+  padding: 8px;
+  background-color: rgba(0, 0, 0, 0);
+  transition: 0.5s;
+}
+
+
+.container-1 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box-1 {
+  flex: 2;
+  height: 150px;
+  width: 150px;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.box-2 {
+  flex: 1;
+  text-align:center;
+  margin-top: 30px; 
+
+
+}
+
+.para1 {
+  font-size: 0.8em;
+  padding-left: 30px;
+  padding-top: 50px;
+
+  text-align: left;
+  color: white;
+}
+
+.para12 {
+    font-size: 0.8em;
+  padding-left: 30px;
+  color: white;
+
+}
+.container-2 {
+  display: flex;
+  flex-wrap: wrap;
+}
+.container-2-box1 {
+  text-align: center;
+  flex: 1;
+  height: 300px;
+  width: 300px;
+}
+.container-2-box2 {
+  flex: 1;
+   margin-left: 10px;
+
+}
+.container-2-box3 {
+   margin-left: 10px;
+  flex: 1;
+}
